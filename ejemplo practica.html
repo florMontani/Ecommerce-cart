@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de eCommerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      /* Estilos personalizados para la página */
+      .product {
+        margin-bottom: 20px;
+      }
+      .product h3 {
+        margin-top: 0;
+      }
+      .product p {
+        margin-bottom: 5px;
+      }
+      .add-to-cart {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .add-to-cart:hover {
+        background-color: #3e8e41;
+      }
+      .table thead th {
+        background-color: #4CAF50;
+        color: white;
+        border-color: #4CAF50;
+      }
+      .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      .table tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+      .table .remove-item {
+        color: #dc3545;
+        cursor: pointer;
+      }
+      .table .remove-item:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Bienvenido a nuestra tienda</h1>
+      <div class="row">
+        <div class="col-md-4 product">
+          <h3>Producto 1</h3>
+          <p class="descript">Descripción del producto 1.</p>
+          <p>Precio: $10</p>
+          <p data-id="1">1</p>
+          <button class="add-to-cart btn btn-success" data-product="Producto 1" data-price="10">Agregar al carrito</button>
+        </div>
+        <div class="col-md-4 product">
+          <h3>Producto 2</h3>
+          <p class="descript">Descripción del producto 2.</p>
+          <p>Precio: $20</p>
+          <p data-id="2">2</p>
+
+          <button class="add-to-cart btn btn-success" data-product="Producto 2" data-price="20">Agregar al carrito</button>
+        </div>
+        <div class="col-md-4 product">
+          <h3>Producto 3</h3>
+          <p class="descript">Descripción del producto 3.</p>
+          <p>Precio: $30</p>
+          <p data-id="3">3</p>
+          <button class="add-to-cart btn btn-success" data-product="Producto 3" 
+          data-price="30">Agregar al carrito</button>
+        </div>
+      </div>
+      <h2 class="mt-5">Carrito de compras</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>cantidad</th>
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr> -->
+            </tbody>
+          </table>
+        </div>
+  
+        <script src="funciones.js"></script>  
+        </body>
+      </html>
+
+              
